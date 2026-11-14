@@ -71,7 +71,7 @@ Each time step has four parts, implemented in `step()` in [`vicsek.py`](vicsek.p
 ## Run it yourself
 
 ```bash
-git clone https://github.com/<your-username>/vicsek-model.git
+git clone https://github.com/vishalsharma-203/vicsek-model.git
 cd vicsek-model
 pip install -r requirements.txt
 
