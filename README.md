@@ -5,7 +5,7 @@
 **How does a crowd of blind followers become a flock?**
 A from-scratch Python simulation of self-propelled particles that align with their neighbours, and the order–disorder transition that appears as noise increases.
 
-<img src="images/flock.gif" alt="Animation of 300 particles self-organising into a flock" width="420">
+<img src="flock.gif" alt="Animation of 300 particles self-organising into a flock" width="420">
 
 `Python` · `NumPy` · `SciPy` · `Matplotlib`
 
@@ -27,7 +27,7 @@ When the noise is small, the whole group ends up moving together. When it is lar
 
 Arrows show the direction of motion, and colour encodes the angle. At low noise nearly everyone shares one colour (one flock), at intermediate noise there are local groups, and at high noise the directions are random.
 
-<img src="images/regimes.png" alt="Snapshots at noise 0.5, 3.0 and 6.0">
+<img src="regimes.png" alt="Snapshots at noise 0.5, 3.0 and 6.0">
 
 ### Measuring order
 
@@ -37,15 +37,15 @@ $$\varphi = \frac{1}{N}\left|\sum_{i=1}^{N} \hat{\mathbf v}_i\right|$$
 
 It equals 1 when all particles move the same way and about $1/\sqrt{N}\approx 0.06$ for random directions. Starting from random directions, low-noise systems order quickly and high-noise ones never do:
 
-<img src="images/order_vs_time.png" alt="Order parameter versus time for four noise values" width="620">
+<img src="order_vs_time.png" alt="Order parameter versus time for four noise values" width="620">
 
 ### Order versus noise
 
 Averaging $\varphi$ in the steady state for 30 noise values (error bars are the fluctuations over time):
 
-<img src="images/phase_transition.png" alt="Average order parameter versus noise strength" width="620">
+<img src="phase_transition.png" alt="Average order parameter versus noise strength" width="620">
 
-Order falls from about 1.0 at near-zero noise to the random level at the maximum noise of $2\pi$. For this system size the decrease is smooth, with the largest fluctuations around noise ≈ 4.5–5.5, where the system is closest to losing order. The raw numbers are in [`images/sweep_data.csv`](images/sweep_data.csv).
+Order falls from about 1.0 at near-zero noise to the random level at the maximum noise of $2\pi$. For this system size the decrease is smooth, with the largest fluctuations around noise ≈ 4.5–5.5, where the system is closest to losing order. The raw numbers are in [`images/sweep_data.csv`](sweep_data.csv).
 
 > **Note:** this is a single run per noise value with N = 300, so the curve is rounded by finite-size effects. Checking how it changes with system size is one of the next steps below.
 
